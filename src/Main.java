@@ -23,12 +23,72 @@ public class Main {
         System.out.println("\nEl valor entero es " + a);
 
         if (a % 2 == 0) {
-            System.out.println("El numero "+ a + " es par");
-        }else{
-            System.out.println("El numero "+ a + " es impar");
+            System.out.println("El numero " + a + " es par\n");
+        } else {
+            System.out.println("El numero " + a + " es impar\n");
         }
 
 
+        if (a < 50) {
+            System.out.println("El numero " + a + " es menor que 50");
+        } else if (a > 50) {
+            System.out.println("El numero " + a + " es mayor que 50");
+        } else {
+            System.out.println("El numero " + a + " es igual a 50");
+        }
 
+
+        //sentencia switch case
+        System.out.println("\nIntroduzca un color(R/r, V/v, A/a): ");
+        d = sc.next();
+        c = d.charAt(0);
+
+        switch (c) {
+            case 'A':
+            case 'a':
+                System.out.println("Color Azul\n");
+                break;
+            case 'R':
+            case 'r':
+                System.out.println("Color Rojo\n");
+                break;
+            case 'V':
+            case 'v':
+                System.out.println("Color Verde\n");
+                break;
+            default:
+                System.out.println("Color no registrado!!!!!!!!!!\n");
+        }
+
+
+        //bucles cuando se conoce a priori el numero de interaciones
+
+        int suma = 0;
+        int suma2 = 0;
+        for (int i = 0; i < 10; i++) {
+            suma = suma + i;
+            suma2 += i;
+        }
+        System.out.println("La suma 1 es: " + suma);
+        System.out.println("La suma 2 es: " + suma2);
+
+
+        //Bucles cuando no se conoce a priori el numero de interacciones
+        //Ejercicio --> Bucle que solicite al usuario hasta que introduzca un numero par
+
+        while (true) {
+            int e;
+            System.out.println("Introduzca un valor entero para comprobar si es par: ");
+            e = sc.nextInt();
+
+            if (e % 2 == 0) {
+                System.out.println("El numero " + e + " es par\n");
+                break;
+            } else {
+                System.out.println("El numero " + e + " es impar\n");
+
+            }
+
+        }
     }
 }
