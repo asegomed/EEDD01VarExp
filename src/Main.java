@@ -99,6 +99,18 @@ public class Main {
         v1 = (int)(2.9+1);
         System.out.println("v1 :" + v1);
 
+        //vi=()
+
+
+        //Operadores
+        int a = 1 , b=2;
+        System.out.println("a: " + a + ", b: " + b);
+        a++; //postincremento
+        ++b; //preincremento
+        System.out.println("a: " + a + ", b: " + b);
+        int c = a++ * ++b;
+        System.out.println("a: " + a + ", b: " + b + ", c: " + c);
+
 
 
     }
