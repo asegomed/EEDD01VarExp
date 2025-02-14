@@ -7,7 +7,7 @@ public class Main {
         //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
         // to see how IntelliJ IDEA suggests fixing it.
         System.out.printf("Hello and welcome!\n");
-
+/*
         int a = 2;
         double b = 3.14;
         char c = 'c';
@@ -75,20 +75,31 @@ public class Main {
 
         //Bucles cuando no se conoce a priori el numero de interacciones
         //Ejercicio --> Bucle que solicite al usuario hasta que introduzca un numero par
+        int e;
+        System.out.println("Introduzca un valor entero para comprobar si es par: ");
+        e = sc.nextInt();
 
         while (true) {
-            int e;
-            System.out.println("Introduzca un valor entero para comprobar si es par: ");
-            e = sc.nextInt();
 
             if (e % 2 == 0) {
                 System.out.println("El numero " + e + " es par\n");
                 break;
             } else {
-                System.out.println("El numero " + e + " es impar\n");
+                System.out.println("El numero " + e + " es impar, introduzca otro numero");
+                e = sc.nextInt();
 
             }
 
         }
+*/
+
+        //conversion de tipos de datos
+        int v1 = (int)2.9 +(int)1.1;
+        System.out.println("Vi :" + v1);
+        v1 = (int)(2.9+1);
+        System.out.println("v1 :" + v1);
+
+
+
     }
 }
