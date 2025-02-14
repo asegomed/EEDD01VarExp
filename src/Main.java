@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -103,6 +104,7 @@ public class Main {
 
 
         //Operadores
+        System.out.println("\n");
         int a = 1 , b=2;
         System.out.println("a: " + a + ", b: " + b);
         a++; //postincremento
@@ -110,6 +112,39 @@ public class Main {
         System.out.println("a: " + a + ", b: " + b);
         int c = a++ * ++b;
         System.out.println("a: " + a + ", b: " + b + ", c: " + c);
+
+        //precedencia de operadores ()++ --
+        System.out.println("\n");
+        boolean b0 = (2+8) < ++a || 2+5*9 == a++ +43;
+        System.out.println("b0: " + b0 + "; a: " +a);
+        b0 = ++a < 10 || ++a ==6; //con un solo | se evaluan los dos lados
+        System.out.println("b0: " + b0 + "; a: " +a);
+
+/*
+        String cad = "Hola";
+        //sobrecarga de operadores: El operador se comporta de manera difirente segun sus operandos
+        a = 1 + 1;
+        cad = "1" + "1"; //es concadenacion
+        System.out.println("Cad: " + cad);
+        String cad1 = cad.substring(2,4);
+        System.out.println("Cad1: " + cad1);
+ */
+
+
+        //Arrays
+        System.out.println("\n");
+        int []arrInt1 = new int[5];
+        int []arrInt2 = {0,1,2,3,4};
+        System.out.println("arrInt1: " + Arrays.toString(arrInt1));
+        System.out.println("arrInt2" + Arrays.toString(arrInt2));
+
+        int [][]matriz1 = new int[5][5];
+        int [][]matriz2 = {{0,1,2,3,4},{0,1,2,3,4}};
+        System.out.println("matriz1: \n" + Arrays.toString(matriz1[0]) + "\n" + Arrays.toString(matriz1[1]));
+        System.out.println("matriz2: \n" + Arrays.toString(matriz2[0]) + "\n" + Arrays.toString(matriz2[1]));
+
+
+
 
 
 
