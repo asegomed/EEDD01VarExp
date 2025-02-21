@@ -5,8 +5,7 @@ import java.util.Scanner;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
+
         System.out.printf("Hello and welcome!\n");
 /*
         int a = 2;
@@ -93,7 +92,7 @@ public class Main {
 
         }
 */
-
+/*
         //conversion de tipos de datos
         int v1 = (int)2.9 +(int)1.1;
         System.out.println("Vi :" + v1);
@@ -102,7 +101,9 @@ public class Main {
 
         //vi=()
 
+ */
 
+/*
         //Operadores
         System.out.println("\n");
         int a = 1 , b=2;
@@ -119,6 +120,8 @@ public class Main {
         System.out.println("b0: " + b0 + "; a: " +a);
         b0 = ++a < 10 || ++a ==6; //con un solo | se evaluan los dos lados
         System.out.println("b0: " + b0 + "; a: " +a);
+*/
+
 
 /*
         String cad = "Hola";
@@ -130,7 +133,7 @@ public class Main {
         System.out.println("Cad1: " + cad1);
  */
 
-
+/*
         //Arrays
         System.out.println("\n");
         int []arrInt1 = new int[5];
@@ -142,11 +145,20 @@ public class Main {
         int [][]matriz2 = {{0,1,2,3,4},{0,1,2,3,4}};
         System.out.println("matriz1: \n" + Arrays.toString(matriz1[0]) + "\n" + Arrays.toString(matriz1[1]));
         System.out.println("matriz2: \n" + Arrays.toString(matriz2[0]) + "\n" + Arrays.toString(matriz2[1]));
+*/
 
-
-
-
-
+        //excribir un bucle for(abreviado) que sume los elemntos de un array de enteros de nombre ai y de longitud 5 posiciones
+        //inicializado previamente dando 0 a todas las posiciones
+        // mostrar el array con arrays.toString
+        //mostrar la suma de los elementos
+        int []ai = {10,10,10,10,10};
+        int suma = 0;
+        for (int i = 0; i < ai.length; i++) {
+            ai[i] = i;
+            suma += ai[i];
+        }
+        System.out.println("ai: " + Arrays.toString(ai));
+        System.out.println("suma: " + suma);
 
     }
 }
